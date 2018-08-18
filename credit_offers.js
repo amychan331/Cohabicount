@@ -1,12 +1,13 @@
 var https = require("https");
 var queryString = require("querystring");
 require('dotenv').config();
+var config = require('./config');
 
 function creditOffers() {
-  let cardType = "consumer"
+  var cardType = "consumer";
   // Assemble the request headers
   var requestHeaders = {
-    "Authorization": `Bearer ${process.env.ACCESS_TOKEN}`,
+    "Authorization": `Bearer ${config.ACCESS_TOKEN}`,
     "Content-Type": "application/x-www-form-urlencoded",
     "Accept": "application/json;v=3"
   }

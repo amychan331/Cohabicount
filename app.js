@@ -5,7 +5,8 @@ A simple echo bot for the Microsoft Bot Framework.
 var restify = require('restify');
 var builder = require('botbuilder');
 var botbuilder_azure = require("botbuilder-azure");
-var creditOffers = require("./credit_offers");
+var creditOffers = require("./credit_offers.json");
+var moneyMover = require("./money_mover.json");
 
 // Setup Restify Server
 var server = restify.createServer();
@@ -38,7 +39,38 @@ bot.set('storage', tableStorage);
 
 bot.dialog('/', function (session) {
   if (session.message.text === "Credit Offer") {
-    session.send(creditOffers());
-  }
+    var result = creditOffers.products;
+    var printObj = '';
+    Object.keys(result).forEach(function(key) {
+      printObj += ("productId" + ": " + result[key]["productId"] + "\n");
+      printObj += ("productDisplayName" + ": " + result[key]["productDisplayName"] + "\n");
+      printObj += ("applyNowLink" + ": " + result[key]["applyNowLink"] + "\n");
+      printObj += ("-------------------------\n");
+    });
+    session.send(printObj);
+
+    // creditOffers().then(
+    //   function(json) {
+    //     var result = json.products;
+    //     var printObj = '';
+    //     Object.keys(result).forEach(function(key) {
+    //        printObj += (key + ": " + result[key] + "\n");
+    //     });
+    //     session.send(printObj);
+    //   },
+    //   function(err) { console.log(err); }
+    // );
+  } else if (session.message.text === "Transfer Money") {
+    var result = moneyMover.accounts;
+    var printObj = '';
+    Object.keys(result).forEach(function(key) {
+      printObj += (key + ": " + result[key] + "\n");
+      printObj += (key + ": " + result[key] + "\n");
+      printObj += (key + ": " + result[key] + "\n");
+      printObj += ("-------------------------\n");
+    });
+    session.send(printObj);
+  }else {
     session.send('You said ' + session.message.text);
+  }
 });
