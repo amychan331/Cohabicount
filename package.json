@@ -1,5 +1,5 @@
 {
-  "name": "hello-chatconnector",
+  "name": "cohabicount",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -12,10 +12,12 @@
   "dependencies": {
     "botbuilder": "^3.13.1",
     "botbuilder-azure": "^3.0.4",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
     "restify": "^5.0.0"
   },
   "devDependencies": {
-    "request": "^2.81.0",
+    "request": "^2.88.0",
     "zip-folder": "^1.0.0"
   }
 }

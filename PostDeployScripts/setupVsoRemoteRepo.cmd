@@ -3,7 +3,7 @@ setlocal
 rem ------------------------------------------------------------------------------------------
 rem setupVsoRemoteRepo [vsoRemote] [vsoUserName] [vsoPersonalAccessToken] [projName{optional}]
 rem create and populate VSO git repo for the ABS code instance
-rem 
+rem
 rem vsoRmote: url of the VSO site (e.g. https://awesomebot.visualstudio.com )
 rem vosUserName: user account name of the personal access token
 rem vsoPersonalAccessToken: the personal access token used to access VSO REST api

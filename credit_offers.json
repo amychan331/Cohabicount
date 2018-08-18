@@ -1,0 +1,61 @@
+HTTP/1.1 200 OK
+Cache-Control: max-age=900
+Content-Type: application/json
+Date: Sat, 18 Aug 2018 09:36:43 GMT
+Expires: Sat, 18 Aug 2018 09:51:43 GMT
+Content-Length: 8186
+Connection: keep-alive
+
+{"productCount":15,
+  "products":[
+    {
+      "productId":"SB063c48a7bf814c0badde9a96f92ae73f",
+      "productDisplayName":"Capital One® Venture® Rewards Credit Card",
+      "activeFrom":"2017-08-15T00:00:00Z",
+      "applyNowLink":"https://goto.capitalone.com/c/mpid/344893/5048?prodsku=SB063c48a7bf814c0badde9a96f92ae73f\u0026p.prodline=USCIR\u0026p.lid=L\u0026u=https%3A%2F%2Fwww.capitalone.com%2Fcredit-cards%2Fventure",
+      "productType":"ConsumerCard",
+      "_links":{"self":{"href":"https://api-sandbox.capitalone.com/credit-offers/products/cards/consumer/SB063c48a7bf814c0badde9a96f92ae73f"}}
+    },{
+      "productId":"SB15d0818b3b3548779f0d769310997791",
+      "productDisplayName":"Sony® Card from Capital One®",
+      "activeFrom":"2017-07-19T00:00:00Z",
+      "applyNowLink":"https://goto.capitalone.com/c/mpid/344893/5048?prodsku=SB15d0818b3b3548779f0d769310997791\u0026p.prodline=USCIR\u0026p.lid=L\u0026u=https%3A%2F%2Fwww.sonyrewards.com%2Fen%2Fgateway%2F%3Fofferlink%3D0715C1Affiliate5K%26campaigncode%3DVIBBUB56",
+      "productType":"ConsumerCard",
+      "_links":{"self":{"href":"https://api-sandbox.capitalone.com/credit-offers/products/cards/consumer/SB15d0818b3b3548779f0d769310997791"}}
+    },{
+      "productId":"SB231f3b591ff14456b71e6758b625e913",
+      "productDisplayName":"Capital One® Spark® Cash Select for Business",
+      "activeFrom":"2017-08-15T00:00:00Z",
+      "applyNowLink":"https://goto.capitalone.com/c/mpid/344893/5048?prodsku=SB231f3b591ff14456b71e6758b625e913\u0026p.prodline=SBCIR\u0026p.lid=L\u0026u=https%3A%2F%2Fwww.capitalone.com%2Fcredit-cards%2Fbusiness%2Fspark-cash-select%2F",
+      "productType":"BusinessCard",
+      "_links":{"self":{"href":"https://api-sandbox.capitalone.com/credit-offers/products/cards/business/SB231f3b591ff14456b71e6758b625e913"}}
+    },{
+      "productId":"SB24c5ef35a4e345d79a0a3830b686d55d",
+      "productDisplayName":"Capital One® Spark® Classic for Business",
+      "activeFrom":"2017-08-15T00:00:00Z",
+      "applyNowLink":"https://goto.capitalone.com/c/mpid/344893/5048?prodsku=SB24c5ef35a4e345d79a0a3830b686d55d\u0026p.prodline=SBCIR\u0026p.lid=L\u0026u=https%3A%2F%2Fwww.capitalone.com%2Fcredit-cards%2Fbusiness%2Fspark-classic%2F",
+      "productType":"BusinessCard",
+      "_links":{"self":{"href":"https://api-sandbox.capitalone.com/credit-offers/products/cards/business/SB24c5ef35a4e345d79a0a3830b686d55d"}}
+    },{
+      "productId":"SB2dd21f6823b44777b085cec8f104b93f",
+      "productDisplayName":"Capital One® VentureOne® Rewards Credit Card",
+      "activeFrom":"2017-08-15T00:00:00Z","applyNowLink":"https://goto.capitalone.com/c/mpid/344893/5048?prodsku=SB2dd21f6823b44777b085cec8f104b93f\u0026p.prodline=USCIR\u0026p.lid=L\u0026u=https%3A%2F%2Fwww.capitalone.com%2Fcredit-cards%2Fventureone",
+      "productType":"ConsumerCard",
+      "_links":{"self":{"href":"https://api-sandbox.capitalone.com/credit-offers/products/cards/consumer/SB2dd21f6823b44777b085cec8f104b93f"}}
+    },{
+      "productId":"SB3020f9d90ccc44c8ade682c679e02934",
+      "productDisplayName":"Journey® Student Rewards from Capital One®",
+      "activeFrom":"2017-07-19T00:00:00Z",
+      "applyNowLink":"https://goto.capitalone.com/c/mpid/344893/5048?prodsku=SB3020f9d90ccc44c8ade682c679e02934\u0026p.prodline=USCIR\u0026p.lid=L\u0026u=https%3A%2F%2Fwww.capitalone.com%2Fcredit-cards%2Fjourney-student",
+      "productType":"ConsumerCard",
+      "_links":{"self":{"href":"https://api-sandbox.capitalone.com/credit-offers/products/cards/consumer/SB3020f9d90ccc44c8ade682c679e02934"}}
+    },{
+      "productId":"SB44da6e8567d04e8ab62d961582d92306",
+      "productDisplayName":"Capital One® Spark® Cash for Business",
+      "activeFrom":"2017-08-15T00:00:00Z",
+      "applyNowLink":"https://goto.capitalone.com/c/mpid/344893/5048?prodsku=SB44da6e8567d04e8ab62d961582d92306\u0026p.prodline=SBCIR\u0026p.lid=L\u0026u=https%3A%2F%2Fwww.capitalone.com%2Fcredit-cards%2Fbusiness%2Fspark-cash%2F",
+      "productType":"BusinessCard",
+      "_links":{"self":{"href":"https://api-sandbox.capitalone.com/credit-offers/products/cards/business/SB44da6e8567d04e8ab62d961582d92306"}}
+    },{
+      "productId":"SB5849ffc3b42c4853bc808ba729adf2b8",
+      "productDisplayName":"PlayStation® Card from Capital One®","activeFrom":"2017-07-19T00:00:00Z","applyNowLink":"https://goto.capitalone.com/c/mpid/344893/5048?prodsku=SB5849ffc3b42c4853bc808ba729adf2b8\u0026p.prodline=USCIR\u0026p.lid=L\u0026u=https%3A%2F%2Fwww.sonyrewards.com%2Fen%2Fgateway%2F%3Fofferlink%3Dco1affpsc5kDec13%26campaigncode%3DVIBBNVNL","productType":"ConsumerCard","_links":{"self":{"href":"https://api-sandbox.capitalone.com/credit-offers/products/cards/consumer/SB5849ffc3b42c4853bc808ba729adf2b8"}}},{"productId":"SB88b65b89c2894a5cb7745c8ee860e425","productDisplayName":"Capital One® Spark® Miles Select for Business","activeFrom":"2017-08-15T00:00:00Z","applyNowLink":"https://goto.capitalone.com/c/mpid/344893/5048?prodsku=SB88b65b89c2894a5cb7745c8ee860e425\u0026p.prodline=SBCIR\u0026p.lid=L\u0026u=https%3A%2F%2Fwww.capitalone.com%2Fcredit-cards%2Fbusiness%2Fspark-miles-select%2F","productType":"BusinessCard","_links":{"self":{"href":"https://api-sandbox.capitalone.com/credit-offers/products/cards/business/SB88b65b89c2894a5cb7745c8ee860e425"}}},{"productId":"SB93170ab1899b4054a5abb9759c468bac","productDisplayName":"Capital One® Quicksilver® Cash Rewards Credit Card","activeFrom":"2017-08-15T00:00:00Z","applyNowLink":"https://goto.capitalone.com/c/mpid/344893/5048?prodsku=SB93170ab1899b4054a5abb9759c468bac\u0026p.prodline=USCIR\u0026p.lid=L\u0026u=https%3A%2F%2Fwww.capitalone.com%2Fcredit-cards%2Fquicksilver","productType":"ConsumerCard","_links":{"self":{"href":"https://api-sandbox.capitalone.com/credit-offers/products/cards/consumer/SB93170ab1899b4054a5abb9759c468bac"}}},{"productId":"SBb9b49c15400146d2a2bb2130063e0df3","productDisplayName":"Capital One® QuicksilverOne® Cash Rewards Credit Card","activeFrom":"2017-07-19T00:00:00Z","applyNowLink":"https://goto.capitalone.com/c/mpid/344893/5048?prodsku=SBb9b49c15400146d2a2bb2130063e0df3\u0026p.prodline=USCIR\u0026p.lid=L\u0026u=https%3A%2F%2Fwww.capitalone.com%2Fcredit-cards%2Fquicksilverone","productType":"ConsumerCard","_links":{"self":{"href":"https://api-sandbox.capitalone.com/credit-offers/products/cards/consumer/SBb9b49c15400146d2a2bb2130063e0df3"}}},{"productId":"SBd4acbacfd8f54a9ab6c3a1b5575fda25","productDisplayName":"Capital One® Platinum Credit Card","activeFrom":"2017-07-19T00:00:00Z","applyNowLink":"https://goto.capitalone.com/c/mpid/344893/5048?prodsku=SBd4acbacfd8f54a9ab6c3a1b5575fda25\u0026p.prodline=USCIR\u0026p.lid=L\u0026u=https%3A%2F%2Fwww.capitalone.com%2Fcredit-cards%2Fplatinum","productType":"ConsumerCard","_links":{"self":{"href":"https://api-sandbox.capitalone.com/credit-offers/products/cards/consumer/SBd4acbacfd8f54a9ab6c3a1b5575fda25"}}},{"productId":"SBd79e3fe0ce014fbdac9826404fde3cf7","productDisplayName":"Capital One® Spark® Miles for Business","activeFrom":"2017-08-15T00:00:00Z","applyNowLink":"https://goto.capitalone.com/c/mpid/344893/5048?prodsku=SBd79e3fe0ce014fbdac9826404fde3cf7\u0026p.prodline=SBCIR\u0026p.lid=L\u0026u=https%3A%2F%2Fwww.capitalone.com%2Fcredit-cards%2Fbusiness%2Fspark-miles%2F","productType":"BusinessCard","_links":{"self":{"href":"https://api-sandbox.capitalone.com/credit-offers/products/cards/business/SBd79e3fe0ce014fbdac9826404fde3cf7"}}},{"productId":"SBe96d53888fcd48d58e082726b9eddd9e","productDisplayName":"Capital One® Secured Mastercard®","activeFrom":"2017-07-19T00:00:00Z","applyNowLink":"https://goto.capitalone.com/c/mpid/344893/5048?prodsku=SBe96d53888fcd48d58e082726b9eddd9e\u0026p.prodline=USCIR\u0026p.lid=L\u0026u=https%3A%2F%2Fwww.capitalone.com%2Fcredit-cards%2Fsecured-mastercard","productType":"ConsumerCard","_links":{"self":{"href":"https://api-sandbox.capitalone.com/credit-offers/products/cards/consumer/SBe96d53888fcd48d58e082726b9eddd9e"}}},{"productId":"SBf9122b5625264cd5a78a4f924de60a24","productDisplayName":"Capital One® Premier Dining Rewards Credit Card","activeFrom":"2017-08-15T00:00:00Z","applyNowLink":"https://goto.capitalone.com/c/mpid/344893/5048?prodsku=SBf9122b5625264cd5a78a4f924de60a24\u0026p.prodline=USCIR\u0026p.lid=L\u0026u=https%3A%2F%2Fwww.capitalone.com%2Fcredit-cards%2Fpremier-dining-rewards","productType":"ConsumerCard","_links":{"self":{"href":"https://api-sandbox.capitalone.com/credit-offers/products/cards/consumer/SBf9122b5625264cd5a78a4f924de60a24"}}}]}
