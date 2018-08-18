@@ -1,0 +1,26 @@
+//GET /deposits/account-products
+
+HTTP/1.1 200 
+Accept: application/json; v=2
+Cache-Control: private
+Content-Type: application/json; v=2
+Date: Sat, 18 Aug 2018 18:27:30 GMT
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Set-Cookie: JSESSIONID=3D0D27C8FDE7FDF1CBBAE6A7D1B92174; Path=/sandbox-simulator-depositapps-web; Secure; HttpOnly
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Version-Served: 2
+X-XSS-Protection: 1; mode=block
+Content-Length: 160
+Connection: keep-alive 
+
+{"entries":[{"productId":"3000","productName":"360 Savings"},{"productId":"3300","productName":"360 Money Market"},{"productId":"3500","productName":"360 CD"}]} 
+
+//GET /deposits/account-products/3500
+
+{"productId":"3500","productName":"360 CD","annualPercentageYieldDetails":{"annualPercentageYieldType":"termBased","termBasedAnnualPercentageYield":[{"term":"6M","annualPercentageYield":0.4},{"term":"9M","annualPercentageYield":0.6},{"term":"12M","annualPercentageYield":0.9},{"term":"18M","annualPercentageYield":1.1},{"term":"24M","annualPercentageYield":1.6},{"term":"30M","annualPercentageYield":1.6},{"term":"36M","annualPercentageYield":1.6},{"term":"48M","annualPercentageYield":1.8},{"term":"60M","annualPercentageYield":2.1}]},"cdTerms":["6M","9M","12M","18M","24M","30M","36M","48M","60M"],"disclosures":{"productDisclosureUrl":"https://www.capitalone.com/cds/online-cds/disclosures/#certificateofdepositdisclosure","termsAndConditionsUrl":"https://www.capitalone.com/cds/online-cds/disclosures/#360certificateofdepositagreement","electronicFundTransferDisclosureUrl":"https://www.capitalone.com/cds/online-cds/disclosures/#electronicfundtransferdisclosurestatement","privacyPolicyUrl":"https://www.capitalone.com/cds/online-cds/disclosures/#privacypolicy","paperlessAgreementUrl":"https://www.capitalone.com/terms_eddn","fraudProtectionAgreementUrl":"https://www.capitalone.com/terms-personal-data","tcpaDisclosureContent":"If number(s) provided above is(are) mobile phone number(s), it is (they are) my mobile phone number(s), by clicking on the button below, I consent to receive autodialed and prerecorded/artificial calls, including texts, relating to my relationship with Capital One (which may include handling, servicing, and billing for any of my accounts). Message and Data rates may apply. You can stop these types of messages by replying STOP in response to a text message, or by following any other instructions contained in the time-sensitive call.\n[Radio button] You can call or text me through automated means\n[Radio button] You can only contact me through non-automated mean"}}
+
+curl -l -k --tlsv1 
+-H "Accept: application/json;v=2"  
+-H "Authorization: Bearer eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwicGNrIjoxLCJhbGciOiJkaXIiLCJ0diI6Miwia2lkIjoicjRxIn0..-JRmWiwUZ7_9pt3BVsSUXw.fJgnKpfS26QDx_icC74dpfxBPlahgEjFeifrfCbMdskRZT2N6q5Fz6Bu3ypibBk8uiNcPBZK93P-urdJDfecS1fcjhZ_qQh_8Y4krJ-dBuGR5cTgsjPly0ulWgBNUXojjcaHfP8mnqAp6wniTSQQTExC2kp3yZFHKKGR90hKFolC2CAUESmeusCometJvefAPU6wMo8brc48Ak2uPqnvjy1Mg4NGbncn5Yopn2i0mfSGYyhuqPcmUN-IbPie8VSqPyMfFRlgPG8j6w_SDqqOgPOhCjI3ceMDr4AWdbdV1WI.JS5gXzr59Exdfe6orbMijg" -X GET "https://api-sandbox.capitalone.com/deposits/account-products/3000"
