@@ -20,8 +20,6 @@ npm run azure-publish
 ```
 
 ### Troubleshoot
-* When running npm run azure-publish, I get "TypeError [ERR_INVALID_CALLBACK]: Callback must be a function" in fs.js.
-One of the fs method is createReadStream(), used in publish.js to opens a file stream for reading. This error mostly shows up because of lacking owner permission. Depending on your OS, change the user of the files in your directory to either \_www(Mac/Linux) or data-www(Window).
 
 ## Use continuous integration
 
