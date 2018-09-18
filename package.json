@@ -10,10 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "botbuilder": "^3.13.1",
-    "botbuilder-azure": "^3.0.4",
-    "fs": "0.0.1-security",
+    "botbuilder": "^3.15.0",
+    "botbuilder-azure": "^3.1.0",
     "https": "^1.0.0",
+    "lodash": "^4.17.5",
     "path": "^0.12.7",
     "querystring": "^0.2.0",
     "restify": "^5.0.0"

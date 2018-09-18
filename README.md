@@ -19,10 +19,13 @@ Your code changes go live as the code changes are saved.
 npm run azure-publish
 ```
 
+### Troubleshoot
+* When running npm run azure-publish, I get "TypeError [ERR_INVALID_CALLBACK]: Callback must be a function" in fs.js.
+One of the fs method is createReadStream(), used in publish.js to opens a file stream for reading. This error mostly shows up because of lacking owner permission. Depending on your OS, change the user of the files in your directory to either \_www(Mac/Linux) or data-www(Window).
+
 ## Use continuous integration
 
 If you have setup continuous integration, then your bot will automatically deployed when new changes are pushed to the source repository.
 
 ## Sample
-<kbd>![Cohabicount in Slack](https://github.com/amychan331/Cohabicount/blob/master/Cohabicount_Demo.gif)</kbd>
-
+<kbd>![Cohabicount in Slack](https://github.com/amychan331/Cohabicount/blob/master/statics/images/Cohabicount_Demo.gif)</kbd>

@@ -22,7 +22,7 @@ function uploadZip(callback) {
   }))
   .on('response', function(resp){
     if (resp.statusCode >= 200 && resp.statusCode < 300) {
-      fs.unlink(zipPath);
+      fs.unlinkSync(zipPath);
       callback(null);
     } else if (resp.statusCode >= 400) {
       callback(resp);

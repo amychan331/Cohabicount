@@ -1,11 +1,3 @@
-HTTP/1.1 200 OK
-Cache-Control: max-age=900
-Content-Type: application/json
-Date: Sat, 18 Aug 2018 09:36:43 GMT
-Expires: Sat, 18 Aug 2018 09:51:43 GMT
-Content-Length: 8186
-Connection: keep-alive
-
 {"productCount":15,
   "products":[
     {

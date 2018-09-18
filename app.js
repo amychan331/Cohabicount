@@ -1,12 +1,10 @@
-/*-----------------------------------------------------------------------------
-A simple echo bot for the Microsoft Bot Framework.
------------------------------------------------------------------------------*/
-
 var restify = require('restify');
 var builder = require('botbuilder');
 var botbuilder_azure = require("botbuilder-azure");
-var creditOffers = require("./credit_offers.json");
-var moneyMover = require("./money_mover.json");
+require('dotenv').config();
+
+var { creditOffers } = require('./api_calls/credit_offers.js');
+var { rewards } = require('../api_calls/rewards.js');
 
 // Setup Restify Server
 var server = restify.createServer();
@@ -37,40 +35,37 @@ var tableStorage = new botbuilder_azure.AzureBotStorage({ gzipData: false }, azu
 var bot = new builder.UniversalBot(connector);
 bot.set('storage', tableStorage);
 
-bot.dialog('/', function (session) {
-  if (session.message.text === "Credit Offer") {
-    var result = creditOffers.products;
-    var printObj = '';
-    Object.keys(result).forEach(function(key) {
-      printObj += ("productId" + ": " + result[key]["productId"] + "\n");
-      printObj += ("productDisplayName" + ": " + result[key]["productDisplayName"] + "\n");
-      printObj += ("applyNowLink" + ": " + result[key]["applyNowLink"] + "\n");
-      printObj += ("-------------------------\n");
-    });
-    session.send(printObj);
+// Setup LUIS
+var luisAppId = process.env.LUIS_APP_ID;
+var luisAppKey = process.env.LUIS_APP_KEY;
+var luisAppHostName = process.env.LUIS_APP_HOSTNAME;
 
-    // creditOffers().then(
-    //   function(json) {
-    //     var result = json.products;
-    //     var printObj = '';
-    //     Object.keys(result).forEach(function(key) {
-    //        printObj += (key + ": " + result[key] + "\n");
-    //     });
-    //     session.send(printObj);
-    //   },
-    //   function(err) { console.log(err); }
-    // );
-  } else if (session.message.text === "Transfer Money") {
-    var result = moneyMover.accounts;
-    var printObj = '';
-    Object.keys(result).forEach(function(key) {
-      printObj += (key + ": " + result[key] + "\n");
-      printObj += (key + ": " + result[key] + "\n");
-      printObj += (key + ": " + result[key] + "\n");
-      printObj += ("-------------------------\n");
-    });
-    session.send(printObj);
-  }else {
-    session.send('You said ' + session.message.text);
+var luisModelUrl = 'https://' + luisAppHostName + '/luis/v2.0/apps/' + luisAppId + '?subscription-key=' + luisAppKey;
+
+// Create a recognizer for retrieving intents from LUIS
+var recognizer = new builder.LuisRecognizer(luisModelUrl);
+bot.recognizer(recognizer);
+
+// Add intent dialog
+bot.dialog('GreetingDialog',
+  (session) => {
+    session.send('Hi! Cohabicount here!');
+    session.endDialog();
   }
-});
+).triggerAction({ matches: 'Greeting' });
+
+bot.dialog('InfoDialog',
+  (session, args) => {
+    session.send("Loading " + args.intent.entities[0].type + " ...");
+    switch (args.intent.entities[0].type) {
+      case "Credit Offers":
+        session.send(creditOffers);
+        break;
+      case "Rewards":
+        session.send(rewards);
+        break;
+      default:
+        session.send('Information not found.');
+    }
+    session.endDialog();
+  }).triggerAction({ matches: 'getInfo' });
