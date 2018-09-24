@@ -58,7 +58,7 @@ cd Cohabicount
 6. Under **App Assets**, select **Entities**. At the right panel, click **+ Create new entity**.
 7. For the **Entity name**, enter the Capital One API you are interested in. For now, the options are **Credit Offers** or **Rewards**. **Entity type** should remain **Simple** by default.
 8. Go back to **getInfo** in **Intents**.
-9. Read (Build custom app to determine user intentions)[] to learn and start training your LUIS app.
+9. Read [Build custom app to determine user intentions](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-quickstart-intents-only) to learn and start training your LUIS app.
 10. When finish training, select the top tab **Manage**.
 11. In the left sidebar, select **Application Information**. In the right panel, look for **Application ID**. Copy that down.
 12. In the left sidebar, select **Keys and Endpoints**. In the right panel, look for **Authoring Key**. Copy that down. In the table below, there should be endpoint URL. Copy down the part of url that look like this: some-region.api.cognitive.microsoft.com. That is your region value for key LUIS_APP_HOSTNAME later.
