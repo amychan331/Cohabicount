@@ -1,7 +1,7 @@
 # Cohabicount
-Team members: Amy Chan, Adam Tropp, Candida Haynes
-Entry for: [2018 Capital One DevExchange](https://www.eventbrite.com/e/capital-one-devexchange-series-san-francisco-tickets-43866338399)
-Awarded for: Microsoft's Cortana Sponsor Prize
+Team members: Amy Chan, Adam Tropp, Candida Haynes<br>
+Entry for: [2018 Capital One DevExchange](https://www.eventbrite.com/e/capital-one-devexchange-series-san-francisco-tickets-43866338399)<br>
+Awarded for: Microsoft's Cortana Sponsor Prize<br>
 <kbd>![Cohabicount in Slack](https://github.com/amychan331/Cohabicount/blob/master/statics/images/Cohabicount_Demo.gif)</kbd>
 
 ## Inspiration
@@ -49,7 +49,7 @@ cd Cohabicount
 5. In the **App Settings* panel at the right, add a new key named **ACCESS_TOKEN**. In the corresponding value, add the access token you got from the playground earlier.
 
 ### LUIS
-1. A LUIS bot have to created separately and connect to your web bot. Start by logging in the (LUIS portal)[http://www.luis.ai].
+1. A LUIS bot have to created separately and connect to your web bot. Start by logging in the [LUIS portal](http://www.luis.ai).
 2. Go to **My Apps**, select **Create new app**.
 3. Name your application Cohabicount or Cohabicount LUIS. Language should be English by default. Click **Done**.
 4. Under **App Assets**, select **Intents**. At the right panel, click **+ Create new intent**.
