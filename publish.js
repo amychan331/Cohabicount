@@ -2,12 +2,13 @@ var zipFolder = require('zip-folder');
 var path = require('path');
 var fs = require('fs');
 var request = require('request');
+require('dotenv').config();
 
 var rootFolder = path.resolve('.');
 var zipPath = path.resolve(rootFolder, '../cohabicount.zip');
 var kuduApi = 'https://cohabicount.scm.azurewebsites.net/api/zip/site/wwwroot';
-var userName = '$cohabicount';
-var password = 'fxY8FfNYnTlWdxfwMt1pLElDhDRje2J1C3DGNau1Ddt1AxgcG1LPfwwfnicr';
+var userName = process.env.PUBLISH_USERNAME;
+var password = process.env.PUBLISH_PASSWORD;
 
 function uploadZip(callback) {
   fs.createReadStream(zipPath).pipe(request.put(kuduApi, {
