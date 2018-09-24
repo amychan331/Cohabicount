@@ -1,7 +1,7 @@
 # Cohabicount
-Team members: Amy Chan, Adam Tropp, Candida Haynes<br>
-Entry for: [2018 Capital One DevExchange](https://www.eventbrite.com/e/capital-one-devexchange-series-san-francisco-tickets-43866338399)<br>
-Awarded for: Microsoft's Cortana Sponsor Prize<br>
+Team members: **Amy Chan, Adam Tropp, Candida Haynes**<br>
+Entry for: **[2018 Capital One DevExchange Hackathon](https://www.eventbrite.com/e/capital-one-devexchange-series-san-francisco-tickets-43866338399)**<br>
+Awarded for: **Microsoft's Cortana Sponsor Prize**<br>
 <kbd>![Cohabicount in Slack](https://github.com/amychan331/Cohabicount/blob/master/statics/images/Cohabicount_Demo.gif)</kbd>
 
 ## Inspiration
