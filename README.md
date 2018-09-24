@@ -4,29 +4,30 @@ Entry for: **[2018 Capital One DevExchange Hackathon](https://www.eventbrite.com
 Awarded for: **Microsoft's Cortana Sponsor Prize**<br>
 <kbd>![Cohabicount in Slack](https://github.com/amychan331/Cohabicount/blob/master/statics/images/Cohabicount_Demo.gif)</kbd>
 
-## Inspiration
+## Overview
+### Inspiration
 In a metropolitan like San Francisco, people are increasingly live and work in shared spaces. In particular, our team mate Candida lived in an extremely large cohousing where financial communication can be difficult and messy but essential because they share a bank account. Like many household, they used a messenger - Slack in their case. We wanted to build a messenger-based tool that will utilize Capital One API to improve financial-related communication and management of bank accounts in a shared household or work environment.
 
-## Description
+### Description
 Cohabicount is an platform-agnostic chatbot that detects when user users have bank or account related questions or request - such as rewards or points earned, suitable credit offers, or sign up request - then offer the relevant datas or assistance so household members can easily discuss their options or take actions.
 
-## Technology
+### Technology
 Cohabicount is built using Azure Bot Framework in a Node.js environment. Using Azure's Cognitive Services, LUIS (Language Understanding Intelligent Service), the bot detects phrases related to bank or account question/requests. Relevant data are then extracted from Capital One's Rest API in JSON format, processed in readable phrases, and output to user.
 For the hackathon demo, we also connected the bot to Slack:
 
-## Hackathon Progress & Roles
+### Hackathon Progress & Roles
 The team used the first night to brainstorm and set up our target result goals for the hackathon. We asked about the current industry concerns and technological capabilities with mentors from Capital One and Microsoft. Using Microsoft Bot Framework and the Azure platform, we were able to built a chatbot and install it in Slack. JSON files are created from Capital One API and connected to the chatbot.
 
-## Challenges
+### Challenges
 We were initially unsure of what each of the Capital One API can do, so we asked the mentors a lot questions and experimenting took a lot of time. Microsoft's Azure platform also had a lot of services, so we weren't sure which one to use at first. When we did built the bot, we had difficulty connecting to Slack, but we were able found out why  with the help from the Microsoft's mentors. Though a LUIS service was set up for the bot, we weren't able to train and utilize it in time for the demo.
 
-## Current Progress
+### Current Progress
 The LUIS service have been trained and implemented into the bot. Directories are reorganized. The JS files that made the API called had been cleaned up, and both files and directories are re-organized.
 
-## To-Do
+### To-Do
 Add more Capital One services but creating more API calls.
 
-# Getting started
+## Getting started
 There are 3 services that you will be utilizing: Capital One API, Microsoft's Azure platform, Microsoft's LUIS platform. Optionally, you may also use [Botframework Emulator](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0) for local testing, but I wouldn't go into that here.
 ### Local Setup & Azure
 1. Sign up or login at [Microsoft Azure](https://azure.microsoft.com/en-us/).
